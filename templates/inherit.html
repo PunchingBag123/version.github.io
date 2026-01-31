@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content="width=device-width, initial-scale= 1.0">
+    {% if title%}
+    <title>AI Chatbot- {{ title }}</title>
+    {%else%}
+    <title>AI Chatbot</title>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAADo6OhBQUHKysphYWFOTk76+vr7+/vt7e3q6uppaWnm5ubR0dHFxcX39/enp6clJSUtLS0TExNbW1vb29s8PDyYmJi3t7dWVlZvb2+KiorZ2dm+vr6Tk5OCgoI1NTULCwuurq4fHx93d3efn59ISEgxMTFAQEApKSkhISH6pD4vAAAEyUlEQVR4nO2c53biMBCFES2YZnpNQqgp7/+Ai5tG1ezZmBXDud+vRIicuUe2NE2p1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBjMhfN0CbcmZ3ohTbhvkRHIeqhjbgr70KITWgj7slAJKxCm3E/+iJjENqQe9EUBc+5ivWdIHrz0OZUQlN5Ggc9odMahjOsKs5CvMlfGsJkHNC0anj5EGItf4tGn5q+6bkb0LZqSPcV9XU7KAJHwcyqkE2iZKmORMWj+vkU+0x29n3H6ljy4F6Z8H9AE3aux7G+T8ZeA5lULfNiR4m04eRdfA9kUsVcij1F97Pj63Mae77Ciy1tm7qHthS7QCZVy0o9+jQ/u7t+in10qB/uz7GzqLwZ/tnx2aKls+WCPle0FM9sgUKcOqHtqorYsYAp++dYxu557BF4ZXGIbv+Fx2ZoBrkm0w3vLcf3fGqwDuxvrWAKRVOd1jagsf9Ef3Fb4JpexZUeHvNgvv0pk/e57CuT2zyDjPgw8elr6MdFEl2NWUYZ8btb4Mg48lvJ4DmMjb9l8G3ru/SNSblvzjSdEbVNgZbPlhTZUuVBDKwA4+CwjoX4q/iIbaWtpQq0gvroQh+eXkLY93tiJcE9Mz8caM7r2nxFmTCXCoxkW62rlqDSCUuWhwZ5qW/acPO0t3fan3d+3s3V7cx9uJY2alegfJsRA/JkjZ6FcixgBsc99SVdL6N5JhpdXPpmK5av4iix3Y4Hh5Y/wLbinVRhJq4E1EjTd2QcFM98G8ir8jo2mLqmKf3G2pN76h8LgRemLs1NBsUjymGHieoZ/RJjizl1OSd/Fznk3iL5Rp38c+R7R4dHemqwKLQpIb3Xha7LKV9yLA2BOewy8ZQUelek61BYm5St+gOhnW2+N5HWsKF9k8NbmLeP5Piyg06F8aTFoR6l10KnnsPNqbAWcxBYW2sKxcE9y62QBQNdoFi4pzFWuDEUGgF9AV+FfVOg0m2pwlfh1lLoPgDYKoxtge5sBFuFVPSdn+SPLteNrcI9LRylR10xL1eF1Ls2SOudOQ7XjatCWdRu11TnxlETZKpQvwDTkYWKvT2VqUJZXspauc+aYB2eCmlvySIKZwyYw1OhdT7QgHUNlqVCWrIi9fIqR6yCIUuFlJ6RpZe1PZTDUSGlZyhgogPDzL9wVEhXmCjo7VDx2rjLzFGhFKMmLpZSiJGwYahw6NRCscZed90YKqQyp5bTpQPDuO3ETiGlZ9Zavox88W9tPj+FSsvTpa2g9MloCRt2Cu30jI3WsMZOoSM9Y6MmbLgp7E5LhEnUPhpuCv+qJ19r4mamMPb2OesotTZmClclqlSmdFQyU+htTTOhqxW8FNJpv2i6oLCKLqrzUkhRoLsKU5OtMhR2sFJI6ZmxpxxKEYYMHVkpJOd66ZmhVDOKjjVOCslW/3/soqJi2/rW4yukfcTfKUIpqeLUZ6QwoptbJTfQqYaR5+EYKaTumXbJLMUnyHKpfBTGdMOw7N6y4tdltTY+CilfeCxtC6UDY582mFJA+fE/zPwFzVkrY+ZpnMmJevm81iZVGG+K7zG9jgcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQiD94uy3PLCZOjgAAAABJRU5ErkJggg==" alt="AI Logo">
+    {% endif %}
+    {% block style %}{% endblock %}
+</head>
+<body>
+    {% block bodies%}{% endblock %}
+    
+</body>
+    </html>

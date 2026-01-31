@@ -1,0 +1,35 @@
+{% extends 'inherit.html'%}
+{% block style %}
+
+<link rel="stylesheet" href='{{url_for('static', filename="style.css")}}'>
+{% endblock style %}
+{% block bodies %}
+<style>
+    @media (min-width:601px) {
+      body {  background-color : blue}
+
+    }
+    @media (max-width : 599px) {
+        body {
+            background-color: red;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 600px) {
+        body { background-color : green}
+    }
+
+</style>
+
+    <h1> This is home page </h1>
+<a href="http://127.0.0.1:5000/Home">Home page</a>
+    <h1> This is About page</h1>
+
+<a href="http://127.0.0.1:5000/About">About page</a>
+    <h1> This Table Data</h1>
+<a href="http://127.0.0.1:5000/Table">Table</a>
+    <h1> Time clock</h1>
+<a href='http://127.0.0.1:5000/Time'>Time</a>
+
+<input type="text" placeholder="try" name="testing">
+<input type="submit">
+{% endblock bodies %}
