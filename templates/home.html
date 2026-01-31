@@ -1,0 +1,27 @@
+{% extends 'inherit.html' %}
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+{% endblock style %}
+{% block bodies %}
+    <div>
+        <p>Home page ma man</p>
+        <p>what is 1+1</p>
+    </div>
+    <h4> idk</h4>
+    <h1> Return to Normal page</h1>
+    <a href= 'http://127.0.0.1:5000'>Back</a>
+    <h1></h1>
+<input type="radio" value="idk bro" name="test"> bro
+<h1>    </h1>
+<input list="fruit" placeholder="Fruit" name="fruit">
+<datalist id="fruit">
+    {% for frui in good_thing %}
+    <option value= {{frui}}>
+
+    </option>
+
+    {% endfor %}
+</datalist>
+<input type="submit">
+
+{% endblock bodies %}
